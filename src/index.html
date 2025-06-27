@@ -4,11 +4,54 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BreezeBuddy - Forecasr at Hand</title>
+	<title>BreezeBuddy - Forecast at Hand</title>
 </head>
 
 <body>
+	<header>
+		<div>
+			<input type="text" id="location" placeholder="Enter a city or a country here">
+		</div>
+		<button>
+			<img src="./assets/icons/search-icon.png" alt="search-icon" height="30">
+		</button>
+	</header>
+	<main>
+		<section class="hero">
+			<div class="hero-left">
+				<div>Now</div>
+				<div>81°C</div>
+				<div class="hero-left__bottom">
+					<span>High: 83°F</span>
+					<span>Low: 78°F</span>
+				</div>
+			</div>
+			<div class="hero-right">
+				<div>Cloudy</div>
+				<div>Feels like 89°F</div>
+			</div>
+		</section>
+		<section class="hourly-forecast">
+			<h1>Hourly forecast</h1>
+			<div class="hourly-forecast__container">
+				<div class="hourly__temp"></div>
+				<div class="hourly__percent"></div>
+				<div class="hourly__img"></div>
+				<div class="hourly__time"></div>
+			</div>
+		</section>
+		<section class="current-condition">
+			<h1>Current Condition</h1>
+			<div class="current-condition__container"></div>
+		</section>
+		<section class="15-days-forecasr">
+			<h1>15 Days Forecast</h1>
+			<div class="15-days-forecast__container"></div>
+		</section>
+	</main>
+	<footer>
 
+	</footer>
 </body>
 
 </html>
