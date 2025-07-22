@@ -1,5 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+:root[data-theme="dark"] {
+	--primary-bg: #202e3b;
+	--content-bg: #0d1d2a;
+	--secondary-bg: #24323f;
+	--clr-blur: #d0e6ff;
+	--clr-white: #e8edf9;
+}
+
+html {
+	background-color: var(--primary-bg);
+}
+
 body {
+	margin: auto;
+	max-width: 800px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	font-family: "Open Sans", sans-serif;
+}
+
+header {
+	display: flex;
+	gap: 0.5rem;
+	/* padding: 0.4rem; */
+	align-items: center;
+	justify-content: center;
+	padding: 0.4rem 0;
+}
+
+header input {
+	height: 40px;
+	padding: 0.4rem;
+	width: 100%;
+	border-radius: 0.4rem;
+}
+
+header > button {
+	background-color: inherit;
+	border: none;
+}
+
+header > button > img {
+	aspect-ratio: 1/1;
+}
+
+section.hero {
+	padding: 0.9rem;
+	background-color: var(--content-bg);
 }

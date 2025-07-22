@@ -2,13 +2,13 @@ import { format } from "date-fns";
 import "../css/normalize.css";
 import "../css/style.css";
 
-const key = "FQTKWM255T9P592Q4VQMQTEFH";
+const key = API_KEY;
 const btn = document.querySelector("button");
 
 async function getWeather(location) {
 	try {
 		const response = await fetch(
-			`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=metric&include=fcst,hours&key=FQTKWM255T9P592Q4VQMQTEFH`,
+			`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=metric&include=fcst,hours&key=${key}`,
 			{
 				mode: "cors",
 			}
